@@ -1,0 +1,12 @@
+{
+	"name": "mermaid-api",
+	"version": "1.0.0",
+	"private": true,
+	"dependencies": {
+		"chalk": "*",
+		"express": "*",
+		"got": "*",
+		"heredoc": "^1.3.1",
+		"npm": "^6.14.11"
+	}
+}
