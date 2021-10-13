@@ -1,0 +1,17 @@
+## Create Serverless NEG to Cloud Run Endpoint
+gcloud compute network-endpoint-groups create neg-mermaid \
+	--cloud-run-service=mermaid-api \
+	--network-endpoint-type=serverless \
+--region=australia-southeast1
+
+## Create backend-service
+gcloud compute backend-services create svc-mermaid \
+	--protocol=HTTPS \
+	--port-name=http \
+--global
+
+## Attach NEG to backend-service
+gcloud compute backend-services add-backend svc-mermaid \
+	--network-endpoint-group=neg-mermaid \
+	--network-endpoint-group-region=australia-southeast1 \
+--global
