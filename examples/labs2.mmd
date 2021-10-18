@@ -9,10 +9,13 @@ graph LR
 	D --> I(Reliable Google Cloud Infrastructure: Design and Process)
 	C --> J(Architecting with Google Kubernetes Engine: Foundations)
 	C --> K(Preparing for the Google Cloud Professional Architecte Exam)
-	E --> E1(Lab: Getting Started with Cloud Marketplace)
-	E --> E2(Lab: Getting Started with Compute Engine)
-	E --> E3(Lab: Getting Started with Cloud Storage and Cloud SQL)
-	E --> E4(Lab: Getting Started with GKE)
-	E --> E5(Lab: Getting Started with App Engine)
-	E --> E6(Lab: Getting Started with Deployment Manager and Cloud Monitoring)
-	E --> E7(Lab: Getting Started with BigQuery)
+
+	subgraph labs
+		E --> E1(Lab: Getting Started with Cloud Marketplace)
+		E --> E2(Lab: Getting Started with Compute Engine)
+		E --> E3(Lab: Getting Started with Cloud Storage and Cloud SQL)
+		E --> E4(Lab: Getting Started with GKE)
+		E --> E5(Lab: Getting Started with App Engine)
+		E --> E6(Lab: Getting Started with Deployment Manager and Cloud Monitoring)
+		E --> E7(Lab: Getting Started with BigQuery)
+	end
