@@ -1,18 +1,18 @@
 graph LR
-	classDef node fill:#00ff00,stroke:#333,stroke-width:4px;
+	classDef anode fill:#00ff00,stroke:#333,stroke-width:4px,height:50px,text-align:center;
 
-	A[Learning Paths]:::node --> B(Coursera)
+	A[Learning Paths]:::anode --> B(Coursera)
 	B --> C(Preparing for Google Cloud Certification: Cloud Architect Specialization)
 	C --> D(Architecting with Google Compute Engine Specialization)
 	D --> E(Google Cloud Fundamentals: Core Infrastructure)
 	D --> F(Essential Google Cloud Infrastructure: Foundation)
-	D --> G(Essential Google Cloud Infrastructure: Core Services):::node
+	D --> G(Essential Google Cloud Infrastructure: Core Services)
 	D --> H(Elastic Google Cloud Infrastructure: Scaling and Automation)
 	D --> I(Reliable Google Cloud Infrastructure: Design and Process)
 	C --> J(Architecting with Google Kubernetes Engine: Foundations)
 	C --> K(Preparing for the Google Cloud Professional Architect Exam)
 
-	subgraph labs
+	subgraph e-labs
 		E1(Lab: Getting Started with Cloud Marketplace)
 		E2(Lab: Getting Started with Compute Engine)
 		E3(Lab: Getting Started with Cloud Storage and Cloud SQL)
@@ -21,7 +21,6 @@ graph LR
 		E6(Lab: Getting Started with Deployment Manager and Cloud Monitoring)
 		E7(Lab: Getting Started with BigQuery)
 	end
-
 	E --> E1
 	E --> E2
 	E --> E3
@@ -29,3 +28,12 @@ graph LR
 	E --> E5
 	E --> E6
 	E --> E7
+
+	subgraph f-labs
+		F1(Lab: Getting Started with Cloud Marketplace)
+		F2(Lab: Getting Started with Compute Engine)
+		F3(Lab: Getting Started with Cloud Storage and Cloud SQL)
+	end
+	F --> F1
+	F --> F2
+	F --> F3
