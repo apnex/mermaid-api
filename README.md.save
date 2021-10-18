@@ -41,5 +41,4 @@ C -->|Two| E[Result 2]
 #### [`>> phase1-infra <<`](phase1-infra/README.md)
 <img align="center" src="https://labops.sh/mmd/svg?url=https://apnex.io/mermaid-api/examples/state.mmd" />
 
-
 ![Gantt Diagram](https://labops.sh/mmd/svg?url=https://apnex.io/mermaid-api/examples/gantt.mmd)
