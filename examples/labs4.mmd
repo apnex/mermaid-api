@@ -1,4 +1,4 @@
-graph LR
+graph TD
 	classDef anode fill:#00ff00,stroke:#333,stroke-width:4px,height:100px,width:200px,text-align:center;
 
 	A(Learning Paths):::anode --> B(Coursera)
@@ -13,15 +13,15 @@ graph LR
 	C --> K(Preparing for the Google Cloud Professional Architect Exam)
 
 	subgraph f-labs
+		direction TD
 		F1(Lab: Getting Started with Cloud Marketplace)
 		F2(Lab: Getting Started with Compute Engine)
 		F3(Lab: Getting Started with Cloud Storage and Cloud SQL)
 	end
-	F --> F1
-	F --> F2
-	F --> F3
+	F --> f-labs
 
 	subgraph e-labs
+		direction TD
 		E1(Lab: Getting Started with Cloud Marketplace)
 		E2(Lab: Getting Started with Compute Engine)
 		E3(Lab: Getting Started with Cloud Storage and Cloud SQL)
@@ -30,11 +30,4 @@ graph LR
 		E6(Lab: Getting Started with Deployment Manager and Cloud Monitoring)
 		E7(Lab: Getting Started with BigQuery)
 	end
-	E --> E1
-	E --> E2
-	E --> E3
-	E --> E4
-	E --> E5
-	E --> E6
-	E --> E7
-
+	E --> e-labs
