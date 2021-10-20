@@ -6,21 +6,21 @@ All examples below are rendered live from source and embedded directly into the 
 
 ### `Flow Diagram`
 `https://labops.sh/mmd/svg?url=https://apnex.io/mermaid-api/examples/flow.mmd`
-![Flow Chart](https://labops.sh/mmd/svg?url=https://apnex.io/mermaid-api/examples/flow.mmd)
+![Flow Chart](https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/flow.mmd)
 
 ### `Sequence Diagram`
-`https://labops.sh/mmd/svg?url=https://apnex.io/mermaid-api/examples/sequence.mmd`
-![Sequence Diagram](https://labops.sh/mmd/svg?url=https://apnex.io/mermaid-api/examples/sequence.mmd)
+`https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/sequence.mmd`
+![Sequence Diagram](https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/sequence.mmd)
 
 ### `Class Diagram`
-`https://labops.sh/mmd/svg?url=https://apnex.io/mermaid-api/examples/class.mmd`
-![Class Diagram](https://labops.sh/mmd/svg?url=https://apnex.io/mermaid-api/examples/class.mmd)
+`https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/class.mmd`
+![Class Diagram](https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/class.mmd)
 
 ### `State Diagram`
-`https://labops.sh/mmd/svg?url=https://apnex.io/mermaid-api/examples/state.mmd`
+`https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/state.mmd`
 
 
-![State Diagram](https://labops.sh/mmd/svg?url=https://apnex.io/mermaid-api/examples/state.mmd)
+![State Diagram](https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/state.mmd)
 
 ### `Gantt Chart`
 <table align="center" style="width:100%">
@@ -33,13 +33,11 @@ C -->|One| D[Result 1]
 C -->|Two| E[Result 2]
 </pre></td>
 <td align="center">
-	<img align="center" src="https://labops.sh/mmd/svg?url=https://apnex.io/mermaid-api/examples/state.mmd" />
+	<img align="center" src="https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/state.mmd" />
 </td>
 </tr>
 </table>
 
 #### [`>> phase1-infra <<`](phase1-infra/README.md)
-<img align="center" src="https://labops.sh/mmd/svg?url=https://apnex.io/mermaid-api/examples/state.mmd" />
-
-
-![Gantt Diagram](https://labops.sh/mmd/svg?url=https://apnex.io/mermaid-api/examples/gantt.mmd)
+<img align="center" src="https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/state.mmd" />
+![Gantt Diagram](https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/gantt.mmd)

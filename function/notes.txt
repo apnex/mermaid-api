@@ -1,0 +1,29 @@
+## Create new function
+gcloud functions deploy eval-path
+	--allow-unauthenticated
+	--runtime=nodejs14
+	--trigger-http
+	--memory=128
+	--source=evalPath
+	--entry-point=evalPath
+--region=australia-southeast1
+
+## Create Serverless NEG
+gcloud compute network-endpoint-groups create neg-mmd-render \
+	--cloud-function-name=mmd-render \
+	--network-endpoint-type=serverless \
+--region=australia-southeast1
+
+## Create backend-service
+gcloud compute backend-services create svc-mmd-render \
+	--protocol=HTTPS \
+	--port-name=http \
+--global
+
+## Attach NEG to backend-service
+gcloud compute backend-services add-backend svc-mmd-render \
+	--network-endpoint-group=neg-mmd-render \
+	--network-endpoint-group-region=australia-southeast1 \
+--global
+
+https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/labs4.mmd
