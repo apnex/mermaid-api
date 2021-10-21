@@ -1,5 +1,5 @@
 ## `mermaid-api`
-An online service that produces a rendered SVG image of a Mermaid mmd raw source file.  
+An online service that produces a rendered SVG image of a Mermaid `mmd` raw source file.  
 The API takes a single URL query parameter `url` - which can point to any publically hosted valid `mmd` source file.  
 
 The API call syntax is as follows:
@@ -7,9 +7,9 @@ The API call syntax is as follows:
 https://labops.sh/mmd?url=<url>
 ```
 
-This makes it simple and useful to embed live diagrams-as-code into your Markdown README files or presentation slides via URL import.  
+This makes it simple and useful to embed live `diagrams-as-code` into your Markdown README files or presentation slides via URL import.  
 
-For testing and developing a diagram, there is a helpful live editor here:  
+For testing syntax and developing a diagram, there is a helpful live Mermaid editor here:  
 https://mermaid.live
 
 Additional documentation on available diagrams and syntax:  
