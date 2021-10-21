@@ -1,0 +1,24 @@
+export const defaultState: State = {
+	code: `graph TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+  `,
+	mermaid: JSON.stringify(
+		{
+			theme: 'default'
+		},
+		null,
+		2
+	),
+	updateEditor: false,
+	autoSync: true,
+	updateDiagram: true
+};
+
+/*
+toBase64(JSON.stringify(code), true)
+*/
+mermaid = JSON.stringify(mermaidConfig, null, 2);

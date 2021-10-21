@@ -5,7 +5,7 @@ Does a thing
 All examples below are rendered live from source and embedded directly into the markdown
 
 ### `Flow Diagram`
-`https://labops.sh/mmd/svg?url=https://apnex.io/mermaid-api/examples/flow.mmd`
+`https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/flow.mmd`
 ![Flow Chart](https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/flow.mmd)
 
 ### `Sequence Diagram`
@@ -18,8 +18,6 @@ All examples below are rendered live from source and embedded directly into the 
 
 ### `State Diagram`
 `https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/state.mmd`
-
-
 ![State Diagram](https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/state.mmd)
 
 ### `Gantt Chart`
@@ -39,5 +37,7 @@ C -->|Two| E[Result 2]
 </table>
 
 #### [`>> phase1-infra <<`](phase1-infra/README.md)
-<img align="center" src="https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/state.mmd" />
+
 ![Gantt Diagram](https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/gantt.mmd)
+
+<img align="center" src="https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/pie.mmd" />

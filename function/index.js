@@ -7,7 +7,7 @@ async function svgRender(mmdRaw) {
 			theme: 'default'
 		}
 	})).toString('base64');
-	let url = 'https://mermaid.ink/svg/' + mmdEncoded;
+	let url = 'https://mermaid.ink/svg/' + encodeURIComponent(mmdEncoded);
 	let response = await got(url);
 	return response.body;
 }
