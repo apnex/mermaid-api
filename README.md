@@ -2,13 +2,21 @@
 An online service that produces a rendered SVG image of a Mermaid mmd raw source file.  
 The API takes a single URL query parameter `url` - which can point to any publically hosted valid `mmd` source file.  
 
-The API call syntas is as follows:
+The API call syntax is as follows:
 ```
 https://labops.sh/mmd?url=<url>
 ```
 
+This makes it simple and useful to embed live diagrams-as-code into your Markdown README files or presentation slides via URL import.  
+
+For testing and developing a diagram, there is a helpful live editor here:  
+https://mermaid.live
+
+Additional documentation on available diagrams and syntax:  
+https://mermaid-js.github.io/
+
 ### Examples
-All examples below are rendered live from source and embedded directly into the markdown
+All examples below are rendered live from source and embedded directly into this markdown
 
 ### `Flow Diagram`
 [`https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/flow.mmd`](https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/flow.mmd)
@@ -34,10 +42,10 @@ All examples below are rendered live from source and embedded directly into the 
 	<img src="https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/state.mmd" />
 </p>
 
-### `Gannt Chart`
-[`https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/gannt.mmd`](https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/gannt.mmd)
+### `Gantt Chart`
+[`https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/gantt.mmd`](https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/gantt.mmd)
 <p align="center">
-	<img src="https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/gannt.mmd" />
+	<img src="https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/gantt.mmd" />
 </p>
 
 ### `Pie Chart`
