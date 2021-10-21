@@ -1,11 +1,11 @@
 ## Create new function
-gcloud functions deploy eval-path
+gcloud functions deploy fnc-mmd-render
 	--allow-unauthenticated
 	--runtime=nodejs14
 	--trigger-http
 	--memory=128
-	--source=evalPath
-	--entry-point=evalPath
+	--source=mmdRender
+	--entry-point=mmdRender
 --region=australia-southeast1
 
 ## Create Serverless NEG
@@ -25,5 +25,3 @@ gcloud compute backend-services add-backend svc-mmd-render \
 	--network-endpoint-group=neg-mmd-render \
 	--network-endpoint-group-region=australia-southeast1 \
 --global
-
-https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/labs4.mmd
