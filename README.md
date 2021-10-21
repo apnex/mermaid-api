@@ -39,5 +39,8 @@ C -->|Two| E[Result 2]
 #### [`>> phase1-infra <<`](phase1-infra/README.md)
 
 ![Gantt Diagram](https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/gantt.mmd)
+<p align="center">
+	<img src="https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/pie.mmd" />
+</p>
 
-<img align="center" src="https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/pie.mmd" />
+<img align="center" src="https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/state.mmd" />
