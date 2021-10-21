@@ -5,8 +5,10 @@ Does a thing
 All examples below are rendered live from source and embedded directly into the markdown
 
 ### `Flow Diagram`
-[`https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/flow.mmd`]
-[Flow Chart](https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/flow.mmd)
+[`https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/flow.mmd`](https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/flow.mmd)
+<p align="center">
+	<img src="https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/flow.mmd" />
+</p>
 
 ### `Sequence Diagram`
 `https://labops.sh/mmd?url=https://apnex.io/mermaid-api/examples/sequence.mmd`
