@@ -1,7 +1,8 @@
 ## `mermaid-api`
 An online service that produces a rendered SVG image of a Mermaid `mmd` raw source file.  
-The API takes a single URL query parameter `url` - which can point to any publically hosted valid `mmd` source file.  
+This is deployed on GCP as a serverless `function` and exposed via a custom domain and External HTTPS load-abalancer.  
 
+The API takes a single URL query parameter `url` - which can point to any publically hosted valid `mmd` source file.  
 The API call syntax is as follows:
 ```
 https://labops.sh/mmd?url=<url>

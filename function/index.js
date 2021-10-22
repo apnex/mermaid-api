@@ -1,36 +1,29 @@
 const got = require('got');
-
-async function inkRender(mmdRaw, type = 'svg') {
-	let mmdEncoded = Buffer.from(JSON.stringify({
+function inkEncode(mmdRaw) {
+	return encodeURIComponent(Buffer.from(JSON.stringify({
 		code: mmdRaw,
 		mermaid: {
 			theme: 'default'
 		}
-	})).toString('base64');
-	let url = 'https://mermaid.ink/' + type + '/' + encodeURIComponent(mmdEncoded);
-	let response = await got(url);
-	return response.body;
+	})).toString('base64'));
 }
-
 exports.mmdRender = async(req, res) => {
 	if(req.query.url) { // check ?url=
 		let type = 'svg';
-		res.type('image/svg+xml');
-		if(req.query.type && req.query.type == 'png') { // check ?type=
+		res.set('Content-Type', 'image/svg+xml');
+		if(req.query.type && req.query.type == 'jpg') { // check ?type=
 			type = 'img';
-			res.type('image/png');
+			res.set('Content-Type', 'image/jpeg');
 		}
 		try {
-			let response = await got(req.query.url); // load mmd
-			let imgBody = await inkRender(response.body, type); // render svg
-			res.status(200).send(imgBody);
+			let mmdRes = await got(req.query.url); // load mmd
+			got.stream('https://mermaid.ink/' + type + '/' + inkEncode(mmdRes.body)).pipe(res);
 		} catch(error) {
-			console.log(JSON.stringify(error, null, "\t"));
-			res.type('text/plain');
-			res.sendStatus(500);
+			res.set('Content-Type', 'text/plain');
+			res.status(500).send('Error: mmd load failed for [' + req.query.url + ']');
 		}
 	} else {
-		res.type('text/plain');
+		res.set('Content-Type', 'text/plain');
 		res.status(404).send('Error: No <url> query param specified!');
 	}
 };

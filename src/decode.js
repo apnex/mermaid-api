@@ -39,7 +39,7 @@ let decoded = mdecode(filecode);
 console.log(decoded);
 
 let encoded = mencode(decoded);
-let url = 'https://mermaid.ink/svg/' + encodeURIComponent(encoded);
+let url = 'https://mermaid.ink/img/' + encodeURIComponent(encoded);
 console.log(url);
 
 /*
@@ -96,6 +96,18 @@ async function svgRender(mmdRaw) {
 	console.log(jsonEncoded);
 	let mmdEncoded = Buffer.from(jsonEncoded).toString('base64');
 	let url = 'https://mermaid.ink/svg/' + encodeURIComponent(mmdEncoded);
+	let response = await got(url);
+	return response.body;
+}
+
+async function imgRender(mmdRaw) {
+	let mmdEncoded = Buffer.from(JSON.stringify({
+		code: mmdRaw,
+		mermaid: {
+			theme: 'default'
+		}
+	})).toString('base64');
+	let url = 'https://mermaid.ink/img/' + encodeURIComponent(mmdEncoded);
 	let response = await got(url);
 	return response.body;
 }
