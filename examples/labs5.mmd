@@ -54,7 +54,8 @@ flowchart TB
 		S2(Lab: Configuring IAM Permissions wth gcloud)
 		S3(Lab: Using gsutil to Perform Operations on Buckets and Objects)
 		S4(Lab: BigQuery: Qwik Start - Command Line)
-		M4 --> S1 --> S2 --> S3 --> S4
+		S1 --> S2 --> S3 --> S4
 	end
 	L --> P(Quest: Using the Cloud SDK Command Line)
 	P --> Q --> R --> s-labs
+	s-labs --> M4
