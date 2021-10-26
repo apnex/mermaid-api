@@ -1,0 +1,31 @@
+flowchart LR
+	classDef anode fill:#00ff00,stroke:#333,stroke-width:4px,height:50px,width:600px;
+
+	A(Learning Paths) --> B(QwikLabs)
+
+	B --> C(Quest: Google Cloud Essentials)
+	C --> C1(Lab: A Tour of Google Cloud Hands-on Labs)
+	C --> C2(Lab: Creating a Virtual Machine)
+	C --> C3(Lab: Compute Engine: Qwik Start - Windows)
+	C --> C4(Lab: Getting Started with Cloud Shell and gcloud)
+	C --> C5(Lab: Kubernetes Engine: Qwik Start)
+	C --> C6(Lab: Set Up Network and HTTP Load Balancers)
+
+	B --> D(Quest: Using the Cloud SDK Command Line)
+	C --> C4
+	D --> D1(Lab: Configuring Networks via gcloud)
+	D --> D2(Lab: Configuring IAM Permissions wth gcloud)
+	D --> D3(Lab: Using gsutil to Perform Operations on Buckets and Objects)
+	D --> D4(Lab: BigQuery: Qwik Start - Command Line)
+
+	B --> E(Quest: Baseline: Infrastructure)
+	E --> E1(Lab: Cloud Storage: Qwik Start - Cloud Console)
+	E --> E2(Lab: Cloud Storage: Qwik Start - CLI/SDK)
+	E --> E3(Lab: Cloud IAM: Qwik Start)
+	E --> E4(Lab: Cloud Monitoring: Qwik Start)
+	E --> E5(Lab: Cloud Functions: Qwik Start - Console)
+	E --> E6(Lab: Cloud Functions: Qwik Start - Command Line)
+	E --> E7(Lab: Google Cloud Pub/Sub: Qwik Start - Console)
+	E --> E8(Lab: Google Cloud Pub/Sub: Qwik Start - Command Line)
+	E --> E9(Lab: Google Cloud Pib/Sub: Qwik Start - Python)
+	E --> E10(Lab: Pub/Sub Lite: Qwik Start)
